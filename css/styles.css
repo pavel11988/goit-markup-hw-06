@@ -740,6 +740,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding-top: 40px;
+  padding-bottom: 60px;
+
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -764,8 +767,7 @@ img {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-svg-close {
@@ -776,6 +778,102 @@ img {
 
 .btn-close-modal:hover,
 .btn-close-modal:focus {
-  border-color: var(--hover-svg-blue-color);
   color: var(--hover-svg-blue-color);
+}
+
+.title-modal {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--text-black-color);
+}
+
+.form {
+  width: 448px;
+  margin: 0 auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-gray-color);
+}
+
+.form-field-input {
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-field-textarea-comment {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  height: 120px;
+}
+
+.form-policy {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.label-policy {
+  font-size: 14px;
+  line-height: 1.71px;
+  color: var(--text-gray-color);
+}
+
+.link-policy {
+  color: var(--text-blue-color);
+}
+
+.submit-button-modal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
