@@ -924,8 +924,8 @@ img {
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-  /* color: var(--text-black-color); */
- 
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-input {
@@ -940,6 +940,9 @@ img {
 
   cursor: pointer;
   outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
  
 .form-field-input:focus,
@@ -980,6 +983,8 @@ img {
   letter-spacing: 0.01em;
 
   height: 120px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field-textarea-comment::placeholder {
@@ -1024,7 +1029,7 @@ img {
   margin-right: 9px;
 }
 
-.checkbox-policy:checked + .check-icon{
+.checkbox-policy:checked + .check-icon {
   background-color: var(--hover-svg-blue-color);
   border-color: var(--hover-svg-blue-color);
   background-image: url('./images/icons/sprite.svg#icon-check');
