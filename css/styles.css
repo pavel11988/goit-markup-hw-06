@@ -305,6 +305,12 @@ img {
   border-radius: 4px;
 }
 
+.footer-subscribe-input :focus,
+.footer-subscribe-input :active  {
+  outline: 1px solid #2196F3;
+}
+
+
 .footer-subscribe-button {
   position: relative;
 
@@ -338,7 +344,7 @@ img {
   position: absolute;
 
   top: 50%;
-  right: 8px;
+  right: 28px;
 
   transform: translateY(-50%);
   fill: var(--white-color);
@@ -908,10 +914,12 @@ img {
 
 }
 
+.input-icon {
+  fill:var(--text-black-color);
+}
+
 .input-icon-svg {
-  width: 12px;
-  height: 12px;
-  fill:red;
+  fill: currentColor;
 }
 
 .form-field-input {
@@ -921,11 +929,23 @@ img {
   border-radius: 4px;
   padding-left: 42px;
   margin-bottom: 10px;
+
+  cursor: pointer;
+  outline: transparent;
+
+  
+}
+
+
+.form-field-input:focus .input-icon,
+.form-field-input:active .input-icon {
+  color: var(--hover-svg-blue-color);
 }
  
 .form-field-input:focus,
-.form-field-input:active  {
-  border: 1px solid #2196F3;
+.form-field-input:active {
+  border-color:#2196F3;
+  fill:var(--hover-svg-blue-color);
 }
 
 
