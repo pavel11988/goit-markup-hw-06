@@ -1029,12 +1029,14 @@ img {
   margin-right: 9px;
 }
 
+
 .checkbox-policy:checked + .check-icon {
   background-color: var(--hover-svg-blue-color);
-  border-color: var(--hover-svg-blue-color);
-  background-image: url('./images/icons/sprite.svg#icon-check');
-  background-size: contain;
-}
+
+  background-image: url('../images/icons/full_check.svg');
+  border-color: var(--hover-svg-blue-color); 
+  background-size: contain; 
+} 
 
 .submit-button-modal {
   padding-top: 10px;
