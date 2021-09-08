@@ -997,6 +997,9 @@ img {
 }
 
 .label-policy {
+  display: flex;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.71px;
   color: var(--text-gray-color);
@@ -1004,6 +1007,28 @@ img {
 
 .link-policy {
   color: var(--text-blue-color);
+}
+
+.checkbox-policy {
+  appearance: none;
+  position: absolute;
+}
+
+.check-icon{
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 9px;
+}
+
+.checkbox-policy:checked + .check-icon{
+  background-color: var(--hover-svg-blue-color);
+  border-color: var(--hover-svg-blue-color);
+  background-image: url('./images/icons/sprite.svg#icon-check');
+  background-size: contain;
 }
 
 .submit-button-modal {
