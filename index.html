@@ -367,6 +367,23 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-subscribe">
+                    <form action="">
+                        <div class="footer-subscribe-instruments">
+                            <label class="footer-subscribe-label"> Подпишитесь на рассылку
+                                <input type="email" class="footer-subscribe-input" placeholder="E-mail">
+                            </label>
+                        
+                            <button type="submit" class="footer-subscribe-button">Подписаться
+                                    <svg class="footer-icon-svg" width="24" height="24">  
+                                        <use href="./images/icons/sprite.svg#icon-telegram"></use>
+                                    </svg>
+                            </button>
+                        </div>
+                    </form>
+                
+            </div>
         </div>          
     </footer>
 
@@ -382,18 +399,43 @@
             <form class="form">
 
                 <div class="form-field">
-                    <label for="name" class="form-field-label">Имя</label>
-                    <input class="form-field-input" type="text" name="name" id="name" autofocus />
+                    <label for="name" class="form-field-label">Имя
+                        <span class="span-input-icon">
+                            <input class="form-field-input" type="text" name="name" id="name" required autofocus />
+                            <span class="input-icon">
+                                <svg class="input-icon-svg">  
+                                    <use href="./images/icons/sprite.svg#icon-input_contact"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </label>
                 </div>
                 
                 <div class="form-field">
-                    <label for="tel" class="form-field-label">Телефон</label>
-                    <input class="form-field-input" type="tel" name="tel" id="tel" autofocus />
+                    <label for="tel" class="form-field-label">Телефон
+                        <span class="span-input-icon">
+                            <input class="form-field-input" type="tel" name="tel" id="tel" required autofocus />
+                            <span class="input-icon">
+                                <svg class="input-icon-svg">
+                                    <use href="./images/icons/sprite.svg#icon-input_tel"></use>
+                                </svg>
+                            </span>
+                        </span>    
+                    </label>
+                    
                 </div>
                 
                 <div class="form-field">
-                    <label for="email" class="form-field-label">Почта</label>
-                    <input class="form-field-input" type="email" name="email" id="email" autofocus />
+                    <label for="email" class="form-field-label">Почта
+                        <span class="span-input-icon">
+                            <input class="form-field-input" type="email" name="email" id="email" autofocus />
+                            <span class="input-icon">
+                                <svg class="input-icon-svg">
+                                    <use href="./images/icons/sprite.svg#icon-input_mail"></use>
+                                </svg>
+                            </span> 
+                        </span> 
+                    </label>
                 </div>
                 
                 <div class="form-field">
@@ -401,8 +443,8 @@
                     <textarea id="comment" name="comment" rows="8" placeholder="Введите текст"
                         class="form-field-textarea-comment"></textarea>
                 </div>
-                
-                <div class="form-policy">
+
+                <div class="div-form-policy">
                     <input type="checkbox">
                     <label class="label-policy">
                         Соглашаюсь с рассылкой и принимаю
